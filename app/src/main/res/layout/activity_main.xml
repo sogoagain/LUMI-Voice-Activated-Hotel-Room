@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/hotel_logo" />
+
+            <Button
+                android:id="@+id/btn_checkOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="@string/str_check_out" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:adjustViewBounds="false"
+            android:src="@drawable/room1" />
+
+        <com.romainpiel.shimmer.ShimmerTextView
+            android:id="@+id/txt_shimmer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/lumi_init"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <com.skyfishjy.library.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ripple_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        app:rb_color="@color/aluminum"
+        app:rb_duration="3000"
+        app:rb_radius="11dp"
+        app:rb_rippleAmount="4"
+        app:rb_scale="6">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_speak_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="bottom|center"
+            android:clickable="true"
+            android:src="@drawable/ic_mic_on"
+            app:backgroundTint="@color/colorAccent"
+            app:fabSize="normal" />
+    </com.skyfishjy.library.RippleBackground>
+
+
+</LinearLayout>

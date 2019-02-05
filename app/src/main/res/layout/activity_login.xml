@@ -1,0 +1,105 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fitsSystemWindows="true">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="56dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+        <ImageView android:src="@drawable/hotel_logo"
+                   android:layout_width="wrap_content"
+                   android:layout_height="100dp"
+                   android:layout_marginBottom="24dp"
+                   android:layout_gravity="center_horizontal" />
+
+        <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+            <AutoCompleteTextView
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_phone"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:singleLine="true"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+            <EditText
+                    android:id="@+id/booking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_booking"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:maxLines="1"
+                    android:singleLine="true"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.v7.widget.AppCompatButton
+                android:id="@+id/check_in_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:padding="12dp"
+                android:text="@string/str_check_in"
+                android:textStyle="bold"/>
+
+        <TextView android:id="@+id/link_signup"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="24dp"
+                  android:text="@string/not_booking"
+                  android:gravity="center"
+                  android:textSize="16dip"/>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="72dp"
+                android:layout_marginBottom="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:gravity="center"
+                    android:src="@drawable/copy"/>
+        </LinearLayout>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:gravity="center"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/naver_open_api"/>
+
+    </LinearLayout>
+</ScrollView>
